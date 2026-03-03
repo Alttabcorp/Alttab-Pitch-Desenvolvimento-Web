@@ -18,6 +18,8 @@ html {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -27,6 +29,14 @@ body {
     color: var(--text-primary);
     background: var(--bg-primary);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Container System */
@@ -34,17 +44,20 @@ body {
     max-width: var(--container-xl);
     margin: 0 auto;
     padding: 0 var(--spacing-6);
+    width: 100%;
 }
 
 .container-wide {
     max-width: var(--container-2xl);
     margin: 0 auto;
     padding: 0 var(--spacing-6);
+    width: 100%;
 }
 
 .container-fluid {
     width: 100%;
     padding: 0 var(--spacing-6);
+    max-width: 100%;
 }
 
 /* Premium Glassmorphism Header */

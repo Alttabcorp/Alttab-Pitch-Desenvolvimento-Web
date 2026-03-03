@@ -1,9 +1,23 @@
 /* Responsividade */
 
+/* Estilos Globais de Responsividade */
+.section,
+.showcase-container,
+.case-study,
+.webdev-overview {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Tablet Landscape (1024px e abaixo) */
 @media (max-width: 1024px) {
     .container {
         padding: 0 var(--spacing-md);
+        max-width: 100%;
+    }
+    
+    body {
+        overflow-x: hidden;
     }
     
     .area-content {
@@ -27,6 +41,27 @@
         flex-wrap: wrap;
     }
     
+    /* Web Dev Overview - Tablet */
+    .webdev-overview {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        padding: var(--spacing-xl);
+    }
+    
+    .overview-visual {
+        order: -1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .overview-visual img {
+        width: 100%;
+    }
+    
+    .overview-metrics {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -34,6 +69,14 @@
 
 /* Tablet Portrait (768px e abaixo) */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    * {
+        max-width: 100%;
+    }
+    
     /* Navigation */
     .nav-menu {
         position: fixed;
@@ -117,6 +160,15 @@
     
     .webdev-overview {
         grid-template-columns: 1fr;
+        padding: var(--spacing-xl);
+    }
+    
+    .overview-visual {
+        order: -1;
+    }
+    
+    .overview-metrics {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     /* Contact */
@@ -162,6 +214,14 @@
 
 /* Mobile (480px e abaixo) */
 @media (max-width: 480px) {
+    * {
+        max-width: 100%;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
     :root {
         --spacing-xs: 0.375rem;
         --spacing-sm: 0.75rem;
@@ -300,6 +360,10 @@
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
         padding: var(--spacing-lg);
+    }
+    
+    .overview-visual {
+        order: -1;
     }
     
     .overview-title {
