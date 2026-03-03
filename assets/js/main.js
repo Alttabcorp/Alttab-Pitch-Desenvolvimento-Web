@@ -7,6 +7,12 @@
 // Utility Functions
 // ====================================
 
+
+// Console easter egg
+console.log('%c🚀 AlttabCorp', 'color: #0066FF; font-size: 20px; font-weight: bold;');
+console.log('%cInteressado em fazer parte da nossa equipe?', 'color: #00C2FF; font-size: 14px;');
+console.log('%cEnvie um email para: alttabcorp@gmail.com', 'color: #A8B2D1; font-size: 12px;');
+
 // Debounce para otimização de performance
 const debounce = (func, wait = 10) => {
     let timeout;
@@ -325,7 +331,6 @@ document.addEventListener('keydown', (e) => {
 // Initialize
 // ====================================
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('✓ Alttabcorp Platform Ready');
     
     // Load com transição suave
     document.body.classList.add('loaded');
@@ -485,25 +490,3 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousels = document.querySelectorAll('.carousel');
     carousels.forEach(carousel => new Carousel(carousel));
 });
-
-// ====================================
-// Console - Identidade Corporativa
-// ====================================
-console.log(`
-┌───────────────────────────────────┐
-│                                   │
-│         ALTTABCORP                │
-│    Technology & Innovation        │
-│                                   │
-│   Enterprise Solutions:           │
-│   • Game Development              │
-│   • Esports Management            │
-│   • 3D Modeling                   │
-│   • Web Development               │
-│   • IT Consulting                 │
-│                                   │
-│   alttabcorp@gmail.com            │
-│   www.alttabcorp.com.br           │
-│                                   │
-└───────────────────────────────────┘
-`);
