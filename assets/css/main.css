@@ -221,6 +221,7 @@ img, video {
     z-index: 2;
     text-align: center;
     max-width: 1000px;
+    margin: 0 auto;
     padding: var(--spacing-12) var(--spacing-6);
 }
 
